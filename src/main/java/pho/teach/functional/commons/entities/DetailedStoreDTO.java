@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class StoreDTO {
+public class DetailedStoreDTO {
     private String id;
     private double fresh;
     private double deli;
