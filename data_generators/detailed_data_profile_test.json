@@ -1,0 +1,54 @@
+{
+  "countries": [
+    {
+      "name": "England",
+      "symbol": "EN",
+      "stores": 3,
+      "minEmployees": 15,
+      "maxEmployees": 20,
+      "cities": [
+        "London",
+        "Manchester"
+      ]
+    },
+    {
+      "name": "Denmark",
+      "symbol": "DK",
+      "stores": 2,
+      "minEmployees": 15,
+      "maxEmployees": 20,
+      "cities": [
+        "Copenhagen",
+        "Aarhus"
+      ]
+    },
+    {
+      "name": "Germany",
+      "symbol": "DE",
+      "stores": 5,
+      "minEmployees": 30,
+      "maxEmployees": 60,
+      "cities": [
+        "Berlin",
+        "Munich",
+        "Hamburg"
+      ]
+    }
+  ],
+  "sections": [
+    "Fresh",
+    "Takeaway",
+    "Frozen",
+    "Bakery",
+    "Meat",
+    "Seafood",
+    "Dairy",
+    "Cereal",
+    "Snacks",
+    "Pets",
+    "House",
+    "Cleanliness"
+  ],
+  "revenue_range_min": 100,
+  "revenue_range_max": 200
+}
