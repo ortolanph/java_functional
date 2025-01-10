@@ -12,14 +12,14 @@ public class RevenueLoader {
 
     private Market marketData;
 
-    public RevenueLoader() {
-        String data = "data/supermarket_revenue.json";
+    public RevenueLoader(String profile) {
+        String dataFile = "supermarket_revenue_%s.json".formatted(profile);
 
         ObjectMapper mapper = new ObjectMapper();
 
         try {
             marketData = mapper.readValue(
-                new File(data),
+                getClass().getResourceAsStream(dataFile),
                 Market.class
             );
         } catch (IOException exception) {

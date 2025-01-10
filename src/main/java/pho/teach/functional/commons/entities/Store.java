@@ -13,5 +13,8 @@ import java.util.List;
 @NoArgsConstructor
 public class Store {
     private String id;
+    private int employees;
+    private String location;
+    private boolean delivery;
     private List<Section> sections;
 }
