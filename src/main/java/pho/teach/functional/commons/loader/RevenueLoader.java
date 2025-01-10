@@ -18,7 +18,7 @@ public class RevenueLoader {
 
         try {
             marketData = mapper.readValue(
-                getClass().getResourceAsStream(dataFile),
+                this.getClass().getClassLoader().getResourceAsStream(dataFile),
                 Market.class
             );
         } catch (IOException exception) {

@@ -45,13 +45,13 @@ public class DetailedStoreMapperImpl implements DetailedStoreMapper {
     }
 
     Predicate<Section> sectionNamePredicate(String sectionName) {
-        return section -> section.getName().equals(sectionName);
+        return section -> section.getSection().equals(sectionName);
     }
 
     private Section zeroedSection() {
         return Section
             .builder()
-            .name("")
+            .section("")
             .revenues(
                 List.of(
                     Month

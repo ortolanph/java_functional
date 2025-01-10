@@ -12,6 +12,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Section {
-    private String name;
+    private String section;
     private List<Month> revenues;
 }

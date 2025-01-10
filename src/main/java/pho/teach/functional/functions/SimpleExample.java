@@ -2,6 +2,7 @@ package pho.teach.functional.functions;
 
 import pho.teach.functional.commons.entities.Country;
 import pho.teach.functional.commons.entities.Market;
+import pho.teach.functional.commons.entities.Month;
 import pho.teach.functional.commons.entities.Section;
 import pho.teach.functional.commons.entities.Store;
 import pho.teach.functional.commons.loader.RevenueLoader;
@@ -54,7 +55,7 @@ public class SimpleExample {
             .flatMap(List::stream)
             .map(Store::getSections)
             .flatMap(List::stream)
-            .map(Section::getName)
+            .map(Section::getSection)
             .collect(Collectors.toSet());
 
         System.out.printf("%nAll Sections:%n%n");
@@ -62,55 +63,61 @@ public class SimpleExample {
             System.out.printf(" * %s%n", s);
         });
 
-//        Double totalRevenue = data
-//            .getCountries()
-//            .stream()
-//            .map(Country::getStores)
-//            .flatMap(List::stream)
-//            .map(Store::getSections)
-//            .flatMap(List::stream)
-//            .mapToDouble(Section::getRevenue)
-//            .sum();
-//
-//        System.out.printf("%nTotal Revenue: %,.2f%n", totalRevenue);
-//
-//        Map<String, Double> countrySummary = data
-//            .getCountries()
-//            .stream()
-//            .collect(Collectors.toMap(
-//                Country::getName,
-//                country -> country
-//                    .getStores()
-//                    .stream()
-//                    .map(Store::getSections)
-//                    .flatMap(List::stream)
-//                    .mapToDouble(Section::getRevenue)
-//                    .sum()
-//            ));
-//
-//        System.out.printf("%nRevenue by Country:%n%n");
-//        countrySummary.forEach((key, value) -> {
-//            System.out.printf(" * %s: %,.2f%n", key, value);
-//        });
-//
-//        Map<String, Double> storeSummary = data
-//            .getCountries()
-//            .stream()
-//            .map(Country::getStores)
-//            .flatMap(List::stream)
-//            .collect(Collectors.toMap(
-//                Store::getId,
-//                store -> store
-//                    .getSections()
-//                    .stream()
-//                    .mapToDouble(Section::getRevenue)
-//                    .sum()
-//            ));
-//
-//        System.out.printf("%nRevenue by Store:%n%n");
-//        storeSummary.forEach((key, value) -> {
-//            System.out.printf(" * %s: %,.2f%n", key, value);
-//        });
+        Double totalRevenue = data
+            .getCountries()
+            .stream()
+            .map(Country::getStores)
+            .flatMap(List::stream)
+            .map(Store::getSections)
+            .flatMap(List::stream)
+            .map(Section::getRevenues)
+            .flatMap(List::stream)
+            .mapToDouble(Month::getRevenue)
+            .sum();
+
+        System.out.printf("%nTotal Revenue: %,.2f%n", totalRevenue);
+
+        Map<String, Double> countrySummary = data
+            .getCountries()
+            .stream()
+            .collect(Collectors.toMap(
+                Country::getName,
+                country -> country
+                    .getStores()
+                    .stream()
+                    .map(Store::getSections)
+                    .flatMap(List::stream)
+                    .map(Section::getRevenues)
+                    .flatMap(List::stream)
+                    .mapToDouble(Month::getRevenue)
+                    .sum()
+            ));
+
+        System.out.printf("%nRevenue by Country:%n%n");
+        countrySummary.forEach((key, value) -> {
+            System.out.printf(" * %s: %,.2f%n", key, value);
+        });
+
+        Map<String, Double> storeSummary = data
+            .getCountries()
+            .stream()
+            .map(Country::getStores)
+            .flatMap(List::stream)
+            .collect(Collectors.toMap(
+                Store::getId,
+                store -> store
+                    .getSections()
+                    .stream()
+                    .map(Section::getRevenues)
+                    .flatMap(List::stream)
+                    .mapToDouble(Month::getRevenue)
+                    .sum()
+            ));
+
+        System.out.printf("%nRevenue by Store:%n%n");
+        storeSummary.forEach((key, value) -> {
+            System.out.printf(" * %s: %,.2f%n", key, value);
+        });
 
         Map<String, List<String>> countryStores = data
             .getCountries()
