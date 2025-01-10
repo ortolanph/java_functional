@@ -10,7 +10,7 @@ public class MarketManager {
     private final Market data;
 
     public MarketManager(String profile) {
-        RevenueLoader loader = new RevenueLoader(profile);
+        RevenueLoader loader = new RevenueLoader();
 
         this.data = loader.getMarketData();
     }

@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pho.teach.functional.commons.entities.DetailedStoreDTO;
+import pho.teach.functional.commons.entities.Month;
 import pho.teach.functional.commons.entities.Section;
 import pho.teach.functional.commons.entities.Store;
 import pho.teach.functional.functions.mapper.DetailedStoreMapper;
@@ -23,62 +24,158 @@ class DetailedStoreMapperImplTest {
                 Section
                     .builder()
                     .name("Fresh")
-                    .revenue(1)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(1)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("Deli")
-                    .revenue(2)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(2)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("Frozen")
-                    .revenue(3)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(3)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("Bakery")
-                    .revenue(4)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(4)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("Meat")
-                    .revenue(5)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(5)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("Seafood")
-                    .revenue(6)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(6)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("Dairy")
-                    .revenue(7)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(7)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("Cereal")
-                    .revenue(8)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(8)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("Snacks")
-                    .revenue(9)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(9)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("Pets")
-                    .revenue(10)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(10)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("House")
-                    .revenue(11)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(11)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("Cleanliness")
-                    .revenue(12)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(12)
+                                .build()
+                        )
+                    )
                     .build()
             )
         )
@@ -92,22 +189,54 @@ class DetailedStoreMapperImplTest {
                 Section
                     .builder()
                     .name("Fresh")
-                    .revenue(1)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(1)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("Deli")
-                    .revenue(2)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(2)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("Dairy")
-                    .revenue(7)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(7)
+                                .build()
+                        )
+                    )
                     .build(),
                 Section
                     .builder()
                     .name("Snacks")
-                    .revenue(9)
+                    .revenues(
+                        List.of(
+                            Month
+                                .builder()
+                                .month("any")
+                                .revenue(9)
+                                .build()
+                        )
+                    )
                     .build()
             )
         )

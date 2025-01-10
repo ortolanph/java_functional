@@ -1,10 +1,12 @@
 package pho.teach.functional.functions;
 
+import pho.teach.functional.commons.entities.DetailedStoreDTO;
+import pho.teach.functional.commons.entities.Month;
 import pho.teach.functional.commons.entities.Section;
 import pho.teach.functional.commons.entities.Store;
-import pho.teach.functional.commons.entities.DetailedStoreDTO;
 import pho.teach.functional.functions.mapper.DetailedStoreMapper;
 
+import java.util.List;
 import java.util.function.Predicate;
 
 public class DetailedStoreMapperImpl implements DetailedStoreMapper {
@@ -36,7 +38,10 @@ public class DetailedStoreMapperImpl implements DetailedStoreMapper {
             .filter(sectionNamePredicate(sectionName))
             .findFirst()
             .orElseGet(this::zeroedSection)
-            .getRevenue();
+            .getRevenues()
+            .stream()
+            .mapToDouble(Month::getRevenue)
+            .sum();
     }
 
     Predicate<Section> sectionNamePredicate(String sectionName) {
@@ -47,7 +52,15 @@ public class DetailedStoreMapperImpl implements DetailedStoreMapper {
         return Section
             .builder()
             .name("")
-            .revenue(0d)
+            .revenues(
+                List.of(
+                    Month
+                        .builder()
+                        .month("any")
+                        .revenue(0.0)
+                        .build()
+                )
+            )
             .build();
     }
 }
