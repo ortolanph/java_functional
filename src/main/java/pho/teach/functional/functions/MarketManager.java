@@ -1,6 +1,6 @@
 package pho.teach.functional.functions;
 
-import pho.teach.functional.commons.entities.Market;
+import pho.teach.functional.commons.entities.functions.Market;
 import pho.teach.functional.commons.loader.RevenueLoader;
 
 import java.util.List;

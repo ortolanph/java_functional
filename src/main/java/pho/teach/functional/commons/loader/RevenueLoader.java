@@ -2,7 +2,7 @@ package pho.teach.functional.commons.loader;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
-import pho.teach.functional.commons.entities.Market;
+import pho.teach.functional.commons.entities.functions.Market;
 
 import java.io.IOException;
 

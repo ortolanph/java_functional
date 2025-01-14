@@ -3,10 +3,10 @@ package pho.teach.functional.functions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pho.teach.functional.commons.entities.DetailedStoreDTO;
-import pho.teach.functional.commons.entities.Month;
-import pho.teach.functional.commons.entities.Section;
-import pho.teach.functional.commons.entities.Store;
+import pho.teach.functional.commons.entities.functions.DetailedStoreDTO;
+import pho.teach.functional.commons.entities.functions.Month;
+import pho.teach.functional.commons.entities.functions.Section;
+import pho.teach.functional.commons.entities.functions.Store;
 import pho.teach.functional.functions.mapper.DetailedStoreMapper;
 
 import java.util.List;

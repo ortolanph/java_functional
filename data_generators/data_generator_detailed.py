@@ -57,7 +57,7 @@ def generate_revenue_data(profile):
         })
 
     market_data = {
-        "name": "EDG Market",
+        "name": "OrtoMarket",
         "year": 2024,
         "countries": country_data
     }

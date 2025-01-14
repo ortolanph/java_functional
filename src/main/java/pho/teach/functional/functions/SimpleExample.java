@@ -1,10 +1,10 @@
 package pho.teach.functional.functions;
 
-import pho.teach.functional.commons.entities.Country;
-import pho.teach.functional.commons.entities.Market;
-import pho.teach.functional.commons.entities.Month;
-import pho.teach.functional.commons.entities.Section;
-import pho.teach.functional.commons.entities.Store;
+import pho.teach.functional.commons.entities.functions.Country;
+import pho.teach.functional.commons.entities.functions.Market;
+import pho.teach.functional.commons.entities.functions.Month;
+import pho.teach.functional.commons.entities.functions.Section;
+import pho.teach.functional.commons.entities.functions.Store;
 import pho.teach.functional.commons.loader.RevenueLoader;
 
 import java.util.List;
