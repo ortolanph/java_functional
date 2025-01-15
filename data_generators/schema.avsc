@@ -1,0 +1,76 @@
+{
+  "type": "array",
+  "items": {
+    "type": "record",
+    "name": "Message",
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "action",
+        "type": {
+          "type": "enum",
+          "name": "ActionType",
+          "symbols": ["CREATE", "DELETE", "UPDATE"]
+        }
+      },
+      {
+        "name": "header",
+        "type": {
+          "type": "record",
+          "name": "Header",
+          "fields": [
+            {
+              "name": "createdBy",
+              "type": "string"
+            },
+            {
+              "name": "timestamp",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      {
+        "name": "body",
+        "type": {
+          "type": "record",
+          "name": "Body",
+          "fields": [
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "phone",
+              "type": {
+                "type": "record",
+                "name": "Phone",
+                "fields": [
+                  {
+                    "name": "prefix",
+                    "type": "string"
+                  },
+                  {
+                    "name": "number",
+                    "type": "string"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "birthdate",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
