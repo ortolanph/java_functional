@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+message VersionInformation {
+  string major = 1;
+  string minor = 2;
+  string bugfix = 3;
+}
+
+message MessageList {
+  repeated Message messages = 1;
+}
+
+message Message {
+  string id = 1;
+  ActionType action = 2;
+  Header header = 3;
+  Body body = 4;
+}
+
+enum ActionType {
+  DELETE = 0;
+  UPDATE = 1;
+  CREATE = 2;
+}
+
+message Header {
+  string createdBy = 1;
+  string timestamp = 2;
+}
+
+message Body {
+  string id = 1;
+  string name = 2;
+  Phone phone = 3;
+  string birthdate = 4;
+}
+
+message Phone {
+  string prefix = 1;
+  string number = 2;
+}

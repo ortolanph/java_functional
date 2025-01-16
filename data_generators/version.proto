@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message VersionInformation {
+  string major = 1;
+  string minor = 2;
+  string bugfix = 3;
+}

@@ -1,7 +1,6 @@
 import json
 import random
 from datetime import datetime, timedelta
-from textwrap import indent
 from uuid import uuid4
 
 ACTIONS = ["CREATE", "UPDATE", "DELETE"]
