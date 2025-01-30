@@ -2,8 +2,10 @@ package pho.teach.functional.functions.users;
 
 import pho.teach.functional.commons.entities.with.User;
 
+import java.security.SecureRandom;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class UserCreator {
@@ -20,36 +22,27 @@ public class UserCreator {
         "santos", "lopes", "muller", "davies", "yang",
         "rossi", "dubois", "moreau", "bianchi", "singh"};
 
-    private static final Random RANDOM_ENGINE = new Random();
+    private static final Random RANDOM_ENGINE = new SecureRandom();
 
     protected static String generatePassword(int length) {
-        Object[] newPassword = IntStream
+        return IntStream
             .range(0, length)
             .map(i -> RANDOM_ENGINE.nextInt(VALID_CHARACTERS.length))
-            .boxed()
-            .map(p -> VALID_CHARACTERS[p])
-            .toArray();
-
-        StringBuilder builder = new StringBuilder();
-
-        for (Object c : newPassword) {
-            builder.append(c);
-        }
-
-        return builder.toString();
+            .mapToObj(i -> String.valueOf(VALID_CHARACTERS[i]))
+            .collect(Collectors.joining());
     }
 
     protected String generateUserName() {
-        int name = RANDOM_ENGINE.nextInt(names.length);
-        int surname = RANDOM_ENGINE.nextInt(surnames.length);
-        return String.format("%s.%s", names[name], surnames[surname]);
+        return String.format(
+            "%s.%s",
+            RANDOM_ENGINE.nextInt(names.length),
+            RANDOM_ENGINE.nextInt(surnames.length));
     }
 
     public List<User> createUserList(int amount, int passwordSize) {
         return IntStream
             .range(0, amount)
-            .boxed()
-            .map(i -> User
+            .mapToObj(i -> User
                 .builder()
                 .name(generateUserName())
                 .password(generatePassword(passwordSize))
