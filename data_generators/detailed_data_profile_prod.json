@@ -1,6 +1,50 @@
 {
   "countries": [
     {
+      "name": "United States",
+      "symbol": "US",
+      "stores": 200,
+      "minEmployees": 70,
+      "maxEmployees": 90,
+      "cities": [
+        "New York",
+        "Washington DC",
+        "Kansas City",
+        "Los Angeles",
+        "Texas",
+        "Las Vegas",
+        "Chicago",
+        "Philadelphia",
+        "Richmond",
+        "Miami"
+      ]
+    },
+    {
+      "name": "South Africa",
+      "symbol": "ZA",
+      "stores": 50,
+      "minEmployees": 70,
+      "maxEmployees": 90,
+      "cities": [
+        "Cape Town",
+        "Johannesburg",
+        "Durban",
+        "Pretoria"
+      ]
+    },
+    {
+      "name": "Morocco",
+      "symbol": "ZA",
+      "stores": 20,
+      "minEmployees": 20,
+      "maxEmployees": 35,
+      "cities": [
+        "Marrakesh",
+        "Casablanca",
+        "Tangier"
+      ]
+    },
+    {
       "name": "England",
       "symbol": "EN",
       "stores": 30,
@@ -9,7 +53,11 @@
       "cities": [
         "London",
         "Manchester",
-        "Liverpool"
+        "Liverpool",
+        "Dover",
+        "Plymouth",
+        "Southampton",
+        "Bristol"
       ]
     },
     {
@@ -24,6 +72,67 @@
       ]
     },
     {
+      "name": "Netherlands",
+      "symbol": "NE",
+      "stores": 40,
+      "minEmployees": 50,
+      "maxEmployees": 70,
+      "cities": [
+        "Amsterdam",
+        "Rotterdam",
+        "Breda"
+      ]
+    },
+    {
+      "name": "Belgium",
+      "symbol": "BE",
+      "stores": 20,
+      "minEmployees": 50,
+      "maxEmployees": 70,
+      "cities": [
+        "Copenhagen",
+        "Aarhus"
+      ]
+    },
+    {
+      "name": "France",
+      "symbol": "FR",
+      "stores": 100,
+      "minEmployees": 50,
+      "maxEmployees": 70,
+      "cities": [
+        "Paris",
+        "Cannes",
+        "Lyon",
+        "Bordeaux",
+        "Lille"
+      ]
+    },
+    {
+      "name": "Switzerland",
+      "symbol": "CH",
+      "stores": 10,
+      "minEmployees": 20,
+      "maxEmployees": 25,
+      "cities": [
+        "Bern",
+        "Geneva"
+      ]
+    },
+    {
+      "name": "Austria",
+      "symbol": "AT",
+      "stores": 50,
+      "minEmployees": 30,
+      "maxEmployees": 45,
+      "cities": [
+        "Vienna",
+        "Innsbruck",
+        "Salzburg",
+        "Graz"
+      ]
+    },
+    {
       "name": "Germany",
       "symbol": "DE",
       "stores": 50,
@@ -35,6 +144,78 @@
         "Frankfurt",
         "Dusseldorf",
         "Hamburg"
+      ]
+    },
+    {
+      "name": "Poland",
+      "symbol": "PL",
+      "stores": 30,
+      "minEmployees": 70,
+      "maxEmployees": 90,
+      "cities": [
+        "Warsaw",
+        "Poznan",
+        "Krakow",
+        "Gdansk"
+      ]
+    },
+    {
+      "name": "Australia",
+      "symbol": "AU",
+      "stores": 50,
+      "minEmployees": 70,
+      "maxEmployees": 90,
+      "cities": [
+        "Sydney",
+        "Brisbane",
+        "Darwin",
+        "Perth",
+        "Canberra",
+        "Melbourne",
+        "Adelainde"
+      ]
+    },
+    {
+      "name": "Japan",
+      "symbol": "JP",
+      "stores": 50,
+      "minEmployees": 70,
+      "maxEmployees": 90,
+      "cities": [
+        "Tokyo",
+        "Kyoto",
+        "Yokohama",
+        "Osaka",
+        "Nagoya",
+        "Kobe",
+        "Hiroshima"
+      ]
+    },
+    {
+      "name": "South Korea",
+      "symbol": "KR",
+      "stores": 50,
+      "minEmployees": 70,
+      "maxEmployees": 90,
+      "cities": [
+        "Seoul",
+        "Busan",
+        "Dengu",
+        "Incheon"
+      ]
+    },
+    {
+      "name": "Brazil",
+      "symbol": "BR",
+      "stores": 100,
+      "minEmployees": 30,
+      "maxEmployees": 60,
+      "cities": [
+        "Sao Paulo",
+        "Brasilia",
+        "Rio de Janeiro",
+        "Curitiba",
+        "Porto Alegre"
       ]
     }
   ],

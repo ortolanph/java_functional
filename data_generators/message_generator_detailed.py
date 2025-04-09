@@ -65,7 +65,7 @@ PHONE_PREFIXES = [
     "+385",  # Croatia
 ]
 
-TOTAL_MESSAGES = 10_000
+TOTAL_MESSAGES = 100_000
 
 
 def main():
