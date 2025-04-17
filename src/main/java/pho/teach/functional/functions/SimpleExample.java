@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 public class SimpleExample {
 
     public static void main(String[] args) {
-        RevenueLoader loader = new RevenueLoader();
+        RevenueLoader loader = new RevenueLoader("supermarket_revenue_detailed_prod.json");
 
         Market data = loader.getMarketData();
 
