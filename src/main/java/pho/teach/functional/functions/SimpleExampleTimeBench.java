@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class SimpleExample {
+public class SimpleExampleTimeBench {
 
     public static void main(String[] args) {
         List<TimeStatistic> statistics = new ArrayList<>();

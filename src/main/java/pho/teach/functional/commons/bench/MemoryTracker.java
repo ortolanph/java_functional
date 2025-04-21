@@ -2,8 +2,8 @@ package pho.teach.functional.commons.bench;
 
 public class MemoryTracker {
     private final Runtime runtime = Runtime.getRuntime();
-    private long startMemory;
-    private long endMemory;
+    private double startMemory;
+    private double endMemory;
     private boolean tracking;
 
     public void start() {
@@ -28,7 +28,7 @@ public class MemoryTracker {
         tracking = false;
     }
 
-    public long getMemoryUsed() {
+    public double getMemoryUsed() {
         if (!tracking && endMemory >= startMemory) {
             return endMemory - startMemory;
         } else {
@@ -36,20 +36,16 @@ public class MemoryTracker {
         }
     }
 
-    private long getUsedMemory() {
+    private double getUsedMemory() {
         return runtime.totalMemory() - runtime.freeMemory();
     }
 
-    public String getMemoryUsedKB() {
-        return getMemoryUsed() / 1024 + " KB";
+    public double getMemoryUsedKB() {
+        return getMemoryUsed() / 1024;
     }
 
-    public String getMemoryUsedMB() {
-        return getMemoryUsed() / (1024 * 1024) + " MB";
+    public double getMemoryUsedMB() {
+        return getMemoryUsed() / (1024 * 1024);
     }
 
-    @Override
-    public String toString() {
-        return getMemoryUsedKB();
-    }
 }
