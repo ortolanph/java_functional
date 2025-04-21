@@ -13,11 +13,11 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class LazyEvaluation {
+public class LazyEvaluationTimeBench {
 
     private Market market;
 
-    public LazyEvaluation(Market market) {
+    public LazyEvaluationTimeBench(Market market) {
         this.market = market;
     }
 
@@ -106,7 +106,7 @@ public class LazyEvaluation {
 
     public static void main(String[] args) {
         RevenueLoader loader = new RevenueLoader("supermarket_revenue_detailed_prod.json");
-        LazyEvaluation evaluator = new LazyEvaluation(loader.getMarketData());
+        LazyEvaluationTimeBench evaluator = new LazyEvaluationTimeBench(loader.getMarketData());
 
         Market data = loader.getMarketData();
 
