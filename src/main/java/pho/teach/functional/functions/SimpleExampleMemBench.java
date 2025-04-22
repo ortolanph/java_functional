@@ -14,7 +14,7 @@ public class SimpleExampleMemBench {
         List<MemoryStatistic> statistics = new ArrayList<>();
         MemoryTracker tracker = new MemoryTracker();
 
-        RevenueLoader loader = new RevenueLoader("supermarket_revenue_detailed_prod.json");
+        RevenueLoader loader = new RevenueLoader("supermarket_revenue_medium.json");
 
         Market data = loader.getMarketData();
 
@@ -31,8 +31,8 @@ public class SimpleExampleMemBench {
             .sorted()
             .toList();
         tracker.stop();
-        tracker.reset();
         statistics.add(new MemoryStatistic("Common Streams Usage", "allCountries", tracker.getMemoryUsedMB()));
+        tracker.reset();
 
         System.out.printf("%nAll countries:%n%n");
         countries.forEach(s -> {
@@ -51,8 +51,8 @@ public class SimpleExampleMemBench {
             .sorted()
             .toList();
         tracker.stop();
-        tracker.reset();
         statistics.add(new MemoryStatistic("Common Streams Usage", "allStores", tracker.getMemoryUsedMB()));
+        tracker.reset();
 
         System.out.printf("%nAll Stores:%n%n");
         stores.forEach(s -> {
@@ -72,8 +72,8 @@ public class SimpleExampleMemBench {
             .map(Section::getSection)
             .collect(Collectors.toSet());
         tracker.stop();
-        tracker.reset();
         statistics.add(new MemoryStatistic("Common Streams Usage", "allSections", tracker.getMemoryUsedMB()));
+        tracker.reset();
 
         System.out.printf("%nAll Sections:%n%n");
         sections.forEach(s -> {
@@ -95,8 +95,8 @@ public class SimpleExampleMemBench {
             .mapToDouble(Month::getRevenue)
             .sum();
         tracker.stop();
-        tracker.reset();
         statistics.add(new MemoryStatistic("Common Streams Usage", "totalRevenues", tracker.getMemoryUsedMB()));
+        tracker.reset();
 
         System.out.printf("%nTotal Revenue: %,.2f%n", totalRevenue);
 
@@ -119,8 +119,8 @@ public class SimpleExampleMemBench {
                     .sum()
             ));
         tracker.stop();
-        tracker.reset();
         statistics.add(new MemoryStatistic("Common Streams Usage", "getCountrySummary", tracker.getMemoryUsedMB()));
+        tracker.reset();
 
         System.out.printf("%nRevenue by Country:%n%n");
         countrySummary.forEach((key, value) -> {
@@ -146,8 +146,8 @@ public class SimpleExampleMemBench {
                     .sum()
             ));
         tracker.stop();
-        tracker.reset();
         statistics.add(new MemoryStatistic("Common Streams Usage", "getStoreSummary", tracker.getMemoryUsedMB()));
+        tracker.reset();
 
         System.out.printf("%nRevenue by Store:%n%n");
         storeSummary.forEach((key, value) -> {
@@ -168,8 +168,8 @@ public class SimpleExampleMemBench {
                     .map(Store::getId)
                     .toList()));
         tracker.stop();
-        tracker.reset();
         statistics.add(new MemoryStatistic("Common Streams Usage", "getCountriesStores", tracker.getMemoryUsedMB()));
+        tracker.reset();
 
         System.out.printf("%nStores by Countries:%n%n");
         countryStores.forEach((key, value) -> {

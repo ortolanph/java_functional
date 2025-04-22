@@ -21,7 +21,7 @@ public class SimpleExampleTimeBench {
         List<TimeStatistic> statistics = new ArrayList<>();
         TimeTracker tracker = new TimeTracker();
 
-        RevenueLoader loader = new RevenueLoader("supermarket_revenue_detailed_prod.json");
+        RevenueLoader loader = new RevenueLoader("supermarket_revenue_big.json");
 
         Market data = loader.getMarketData();
 

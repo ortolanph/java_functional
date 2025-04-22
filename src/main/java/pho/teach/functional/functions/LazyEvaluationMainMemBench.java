@@ -13,7 +13,7 @@ public class LazyEvaluationMainMemBench {
         List<MemoryStatistic> statistics = new ArrayList<>();
         MemoryTracker tracker = new MemoryTracker();
 
-        RevenueLoader loader = new RevenueLoader("supermarket_revenue_detailed_prod.json");
+        RevenueLoader loader = new RevenueLoader("supermarket_revenue_medium.json");
         LazyEvaluation evaluator = new LazyEvaluation(loader.getMarketData());
 
         Market data = loader.getMarketData();
@@ -26,8 +26,8 @@ public class LazyEvaluationMainMemBench {
         tracker.start();
         List<String> countries = evaluator.allCountries();
         tracker.stop();
-        tracker.reset();
         statistics.add(new MemoryStatistic("Lazy Evaluation", "allCountries", tracker.getMemoryUsedMB()));
+        tracker.reset();
 
         System.out.printf("%nAll countries:%n%n");
         countries.forEach(s -> {
@@ -40,6 +40,7 @@ public class LazyEvaluationMainMemBench {
         List<String> stores = evaluator.allStores();
         tracker.stop();
         statistics.add(new MemoryStatistic("Lazy Evaluation", "allStores", tracker.getMemoryUsedMB()));
+        tracker.reset();
 
         System.out.printf("%nAll Stores:%n%n");
         stores.forEach(s -> {
@@ -53,6 +54,7 @@ public class LazyEvaluationMainMemBench {
         Set<String> sections = evaluator.allSections();
         tracker.stop();
         statistics.add(new MemoryStatistic("Lazy Evaluation", "allSections", tracker.getMemoryUsedMB()));
+        tracker.reset();
 
         System.out.printf("%nAll Sections:%n%n");
         sections.forEach(s -> {
@@ -65,6 +67,7 @@ public class LazyEvaluationMainMemBench {
         Double totalRevenue = evaluator.totalRevenues();
         tracker.stop();
         statistics.add(new MemoryStatistic("Lazy Evaluation", "totalRevenues", tracker.getMemoryUsedMB()));
+        tracker.reset();
 
         System.out.printf("%nTotal Revenue: %,.2f%n", totalRevenue);
 
@@ -74,6 +77,7 @@ public class LazyEvaluationMainMemBench {
         Map<String, Double> countrySummary = evaluator.getCountrySummary();
         tracker.stop();
         statistics.add(new MemoryStatistic("Lazy Evaluation", "getCountrySummary", tracker.getMemoryUsedMB()));
+        tracker.reset();
 
         System.out.printf("%nRevenue by Country:%n%n");
         countrySummary.forEach((key, value) -> {
@@ -98,6 +102,7 @@ public class LazyEvaluationMainMemBench {
         Map<String, List<String>> countryStores = evaluator.getCountryStores();
         tracker.stop();
         statistics.add(new MemoryStatistic("Lazy Evaluation", "getCountriesStores", tracker.getMemoryUsedMB()));
+        tracker.reset();
 
 
         System.out.printf("%nStores by Countries:%n%n");

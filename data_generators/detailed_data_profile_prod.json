@@ -3,7 +3,7 @@
     {
       "name": "United States",
       "symbol": "US",
-      "stores": 200,
+      "stores": 500,
       "minEmployees": 70,
       "maxEmployees": 90,
       "cities": [
@@ -216,6 +216,508 @@
         "Rio de Janeiro",
         "Curitiba",
         "Porto Alegre"
+      ]
+    },
+    {
+      "name": "Canada",
+      "symbol": "CA",
+      "stores": 100,
+      "minEmployees": 30,
+      "maxEmployees": 60,
+      "cities": [
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Calgary",
+        "Ottawa",
+        "Edmonton",
+        "Winnipeg",
+        "Quebec City",
+        "Hamilton",
+        "Halifax"
+      ]
+    },
+    {
+      "name": "Mexico",
+      "symbol": "MX",
+      "stores": 75,
+      "minEmployees": 30,
+      "maxEmployees": 60,
+      "cities": [
+        "Mexico City",
+        "Guadalajara",
+        "Monterrey",
+        "Puebla",
+        "Tijuana",
+        "León",
+        "Ciudad Juárez",
+        "Toluca",
+        "Mérida",
+        "San Luis Potosí"
+      ]
+    },
+    {
+      "name": "Argentina",
+      "symbol": "AR",
+      "stores": 60,
+      "minEmployees": 30,
+      "maxEmployees": 60,
+      "cities": [
+        "Buenos Aires",
+        "Cordoba",
+        "Rosario",
+        "Mendoza",
+        "La Plata",
+        "San Miguel de Tucumán",
+        "Mar del Plata"
+      ]
+    },
+    {
+      "name": "Uruguay",
+      "symbol": "UY",
+      "stores": 50,
+      "minEmployees": 30,
+      "maxEmployees": 60,
+      "cities": [
+        "Montevideo",
+        "Salto",
+        "Paysandú",
+        "Las Piedras",
+        "Rivera"
+      ]
+    },
+    {
+      "name": "Belize",
+      "symbol": "BZ",
+      "stores": 10,
+      "minEmployees": 15,
+      "maxEmployees": 30,
+      "cities": [
+        "Belize City",
+        "Belmopan"
+      ]
+    },
+    {
+      "name": "Costa Rica",
+      "symbol": "CR",
+      "stores": 10,
+      "minEmployees": 15,
+      "maxEmployees": 30,
+      "cities": [
+        "San José",
+        "Alajuela"
+      ]
+    },
+    {
+      "name": "El Salvador",
+      "symbol": "SV",
+      "stores": 10,
+      "minEmployees": 15,
+      "maxEmployees": 30,
+      "cities": [
+        "San Salvador",
+        "Santa Ana"
+      ]
+    },
+    {
+      "name": "Guatemala",
+      "symbol": "GT",
+      "stores": 10,
+      "minEmployees": 15,
+      "maxEmployees": 30,
+      "cities": [
+        "Guatemala City",
+        "Quetzaltenango"
+      ]
+    },
+    {
+      "name": "Honduras",
+      "symbol": "HN",
+      "stores": 10,
+      "minEmployees": 15,
+      "maxEmployees": 30,
+      "cities": [
+        "Tegucigalpa",
+        "San Pedro Sula"
+      ]
+    },
+    {
+      "name": "Nicaragua",
+      "symbol": "NI",
+      "stores": 10,
+      "minEmployees": 15,
+      "maxEmployees": 30,
+      "cities": [
+        "Managua",
+        "León"
+      ]
+    },
+    {
+      "name": "Panama",
+      "symbol": "PA",
+      "stores": 10,
+      "minEmployees": 15,
+      "maxEmployees": 30,
+      "cities": [
+        "Panama City",
+        "Colón"
+      ]
+    },
+    {
+      "name": "Portugal",
+      "symbol": "PT",
+      "stores": 100,
+      "minEmployees": 30,
+      "maxEmployees": 60,
+      "cities": [
+        "Lisbon",
+        "Porto",
+        "Vila Nova de Gaia",
+        "Braga",
+        "Coimbra",
+        "Funchal",
+        "Aveiro",
+        "Faro",
+        "Evora",
+        "Setúbal"
+      ]
+    },
+    {
+      "name": "Spain",
+      "symbol": "ES",
+      "stores": 100,
+      "minEmployees": 30,
+      "maxEmployees": 60,
+      "cities": [
+        "Madrid",
+        "Barcelona",
+        "Valencia",
+        "Sevilla",
+        "Zaragoza",
+        "Malaga",
+        "Bilbao",
+        "Murcia",
+        "Palma de Mallorca",
+        "Granada"
+      ]
+    },
+    {
+      "name": "Italy",
+      "symbol": "IT",
+      "stores": 100,
+      "minEmployees": 30,
+      "maxEmployees": 60,
+      "cities": [
+        "Roma",
+        "Milano",
+        "Napoli",
+        "Torino",
+        "Palermo",
+        "Genova",
+        "Bologna",
+        "Firenze",
+        "Venezia",
+        "Verona"
+      ]
+    },
+    {
+      "name": "Nigeria",
+      "symbol": "NG",
+      "stores": 60,
+      "minEmployees": 20,
+      "maxEmployees": 30,
+      "cities": [
+        "Lagos",
+        "Abuja",
+        "Kano",
+        "Port Harcourt",
+        "Ibadan"
+      ]
+    },
+    {
+      "name": "Egypt",
+      "symbol": "EG",
+      "stores": 60,
+      "minEmployees": 20,
+      "maxEmployees": 30,
+      "cities": [
+        "Cairo",
+        "Alexandria",
+        "Giza",
+        "Luxor",
+        "Aswan"
+      ]
+    },
+    {
+      "name": "Ethiopia",
+      "symbol": "ET",
+      "stores": 60,
+      "minEmployees": 20,
+      "maxEmployees": 30,
+      "cities": [
+        "Addis Ababa",
+        "Dire Dawa",
+        "Gondar",
+        "Mekelle",
+        "Bahir Dar"
+      ]
+    },
+    {
+      "name": "Italy",
+      "symbol": "IT",
+      "stores": 60,
+      "minEmployees": 20,
+      "maxEmployees": 30,
+      "cities": [
+        "Roma",
+        "Milano",
+        "Napoli",
+        "Torino",
+        "Verona"
+      ]
+    },
+    {
+      "name": "Kenya",
+      "symbol": "KE",
+      "stores": 60,
+      "minEmployees": 20,
+      "maxEmployees": 30,
+      "cities": [
+        "Nairobi",
+        "Mombasa",
+        "Kisumu",
+        "Nakuru",
+        "Eldoret"
+      ]
+    },
+    {
+      "name": "Ghana",
+      "symbol": "GH",
+      "stores": 60,
+      "minEmployees": 20,
+      "maxEmployees": 30,
+      "cities": [
+        "Accra",
+        "Kumasi",
+        "Tamale",
+        "Takoradi",
+        "Cape Coast"
+      ]
+    },
+    {
+      "name": "Tanzania",
+      "symbol": "TZ",
+      "stores": 60,
+      "minEmployees": 20,
+      "maxEmployees": 30,
+      "cities": [
+        "Dar es Salaam",
+        "Dodoma",
+        "Arusha",
+        "Mwanza",
+        "Zanzibar City"
+      ]
+    },
+    {
+      "name": "Uganda",
+      "symbol": "UG",
+      "stores": 60,
+      "minEmployees": 20,
+      "maxEmployees": 30,
+      "cities": [
+        "Kampala",
+        "Entebbe",
+        "Jinja",
+        "Gulu",
+        "Mbarara"
+      ]
+    },
+    {
+      "name": "Sudan",
+      "symbol": "SD",
+      "stores": 60,
+      "minEmployees": 20,
+      "maxEmployees": 30,
+      "cities": [
+        "Khartoum",
+        "Omdurman",
+        "Port Sudan",
+        "Kassala",
+        "El Obeid"
+      ]
+    },
+    {
+      "name": "Senegal",
+      "symbol": "SN",
+      "stores": 60,
+      "minEmployees": 20,
+      "maxEmployees": 30,
+      "cities": [
+        "Dakar",
+        "Thies",
+        "Saint-Louis",
+        "Ziguinchor",
+        "Kaolack"
+      ]
+    },
+    {
+      "name": "China",
+      "symbol": "CN",
+      "stores": 80,
+      "minEmployees": 40,
+      "maxEmployees": 60,
+      "cities": [
+        "Beijing",
+        "Shanghai",
+        "Guangzhou",
+        "Shenzhen",
+        "Chengdu",
+        "Xi’an",
+        "Hangzhou"
+      ]
+    },
+    {
+      "name": "India",
+      "symbol": "IN",
+      "stores": 80,
+      "minEmployees": 40,
+      "maxEmployees": 60,
+      "cities": [
+        "New Delhi",
+        "Mumbai",
+        "Bangalore",
+        "Kolkata",
+        "Chennai",
+        "Hyderabad",
+        "Ahmedabad"
+      ]
+    },
+    {
+      "name": "Indonesia",
+      "symbol": "ID",
+      "stores": 80,
+      "minEmployees": 40,
+      "maxEmployees": 60,
+      "cities": [
+        "Jakarta",
+        "Surabaya",
+        "Bandung",
+        "Medan",
+        "Semarang",
+        "Makassar",
+        "Yogyakarta"
+      ]
+    },
+    {
+      "name": "Thailand",
+      "symbol": "TH",
+      "stores": 80,
+      "minEmployees": 40,
+      "maxEmployees": 60,
+      "cities": [
+        "Bangkok",
+        "Chiang Mai",
+        "Pattaya",
+        "Phuket",
+        "Hat Yai",
+        "Korat",
+        "Khon Kaen"
+      ]
+    },
+    {
+      "name": "Pakistan",
+      "symbol": "PK",
+      "stores": 80,
+      "minEmployees": 40,
+      "maxEmployees": 60,
+      "cities": [
+        "Islamabad",
+        "Karachi",
+        "Lahore",
+        "Faisalabad",
+        "Rawalpindi",
+        "Multan",
+        "Peshawar"
+      ]
+    },
+    {
+      "name": "Vietnam",
+      "symbol": "VN",
+      "stores": 80,
+      "minEmployees": 40,
+      "maxEmployees": 60,
+      "cities": [
+        "Hanoi",
+        "Saigon",
+        "Da Nang",
+        "Hai Phong",
+        "Can Tho",
+        "Hue",
+        "Nha Trang"
+      ]
+    },
+    {
+      "name": "Philippines",
+      "symbol": "PH",
+      "stores": 80,
+      "minEmployees": 40,
+      "maxEmployees": 60,
+      "cities": [
+        "Manila",
+        "Quezon City",
+        "Cebu City",
+        "Davao City",
+        "Zamboanga City",
+        "Baguio City",
+        "Iloilo City"
+      ]
+    },
+    {
+      "name": "Iran",
+      "symbol": "Iran",
+      "stores": 80,
+      "minEmployees": 40,
+      "maxEmployees": 60,
+      "cities": [
+        "Tehran",
+        "Mashhad",
+        "Isfahan",
+        "Shiraz",
+        "Tabriz",
+        "Tabriz",
+        "Kermanshah"
+      ]
+    },
+    {
+      "name": "Malaysia",
+      "symbol": "MY",
+      "stores": 80,
+      "minEmployees": 40,
+      "maxEmployees": 60,
+      "cities": [
+        "Kuala Lumpur",
+        "Penang",
+        "Johor Bahru",
+        "Ipoh",
+        "Shah Alam",
+        "Kota Kinabalu",
+        "Kuching"
+      ]
+    },
+    {
+      "name": "Saudi Arabia",
+      "symbol": "SA",
+      "stores": 80,
+      "minEmployees": 40,
+      "maxEmployees": 60,
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Mecca",
+        "Medina",
+        "Dammam",
+        "Khobar",
+        "Tabuk"
       ]
     }
   ],

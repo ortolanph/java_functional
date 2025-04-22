@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.TimerTask;
 
 public class LazyEvaluationMainTimeBench {
 
@@ -17,7 +16,7 @@ public class LazyEvaluationMainTimeBench {
         List<TimeStatistic> statistics = new ArrayList<>();
         TimeTracker tracker = new TimeTracker();
 
-        RevenueLoader loader = new RevenueLoader("supermarket_revenue_detailed_prod.json");
+        RevenueLoader loader = new RevenueLoader("supermarket_revenue_big.json");
         LazyEvaluation evaluator = new LazyEvaluation(loader.getMarketData());
 
         Market data = loader.getMarketData();
