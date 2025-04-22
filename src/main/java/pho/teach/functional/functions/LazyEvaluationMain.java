@@ -10,7 +10,7 @@ import java.util.Set;
 public class LazyEvaluationMain {
 
     public static void main(String[] args) {
-        RevenueLoader loader = new RevenueLoader("supermarket_revenue_big.json");
+        RevenueLoader loader = new RevenueLoader("supermarket_revenue.json");
         LazyEvaluation evaluator = new LazyEvaluation(loader.getMarketData());
 
         Market data = loader.getMarketData();
