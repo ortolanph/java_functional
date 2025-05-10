@@ -1,0 +1,39 @@
+@startuml
+
+class Market {
+    - name: String
+    - year: int
+    - countries: List<Country>
+}
+
+class Country {
+    - name: String
+    - stores: List<Store>
+}
+
+class Store {
+    - id: String
+    - employees: int
+    - location: String
+    - delivery: boolean
+    - sections: List<Section>
+}
+
+class Section {
+    - section: String
+    - revenues: List<Month>
+}
+
+class Month {
+    - month: String
+    - revenue: double
+}
+
+
+
+Market -right-> Country
+Country -right-> Store
+Store -down-> Section
+Section -left-> Month
+
+@enduml
